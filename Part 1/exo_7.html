@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+            <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+            <button onclick="kalkul()" id="valider" name="valider">Valider</button>
+        </form>
+
+        <script>
+            function kalkul() {
+                var points = document.getElementById("pointure").value ; 
+                var naiss = document.getElementById("annee").value ;
+                var rezult = (((points * 2)+5)*50) - naiss + 1766 ;  
+                alert("le résultat est : "+ rezult ) ; 
+            }
+        </script>
+    </body>
+</html>

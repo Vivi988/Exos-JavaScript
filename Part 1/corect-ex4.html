@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_4</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+            <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+            <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+            <button onclick = "nome()" name="valider" id="valider">Valider</button>
+        </form>
+
+    </body>
+    <script>
+        var nom = document.getElementById("nom") ;
+        var prenom = document.getElementById("prenom") ;
+        var ville = document.getElementById("ville") ;
+
+        function nome() {
+            alert("Nom :" + nom.value + "\nPrénom " + prenom.value + "\nVille " + ville.value) ; 
+        }
+    </script>
+</html>

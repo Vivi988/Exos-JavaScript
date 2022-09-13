@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_8</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+            <button onclick = "Maj()" id="valider" name="valider">Valider</button>
+        </form>
+
+        <script>
+            function Maj(){
+                var agee = document.getElementById("age").value ;
+                if (agee > 18 ){
+                    alert("Vous êtes majeur") ; 
+                } else {
+                    alert("Vous êtes encore mineur") ; 
+                }
+            }
+
+        </script>
+    </body>
+</html>
