@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+    <body>
+      <form>
+        <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+        <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+        <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+        <button onclick = "eraz()" type="button" name="button" id="btn">RAZ</button>
+      </form>
+    </body>
+    <script>
+        function eraz() {
+            var F_n = document.getElementById("nom") ; 
+            var n = document.getElementById("prenom") ; 
+            var v = document.getElementById("ville") ;
+
+            F_n.value = "" ; 
+            n.value = "" ;
+            v.value = "" ;
+
+        }
+
+    </script>
+
+
+
+    </html>

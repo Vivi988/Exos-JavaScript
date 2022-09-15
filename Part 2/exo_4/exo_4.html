@@ -6,16 +6,23 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="noom" />
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
     <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
     <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
-    <button onclick = "eraz()" type="button" name="button">RAZ</button>
+    <button type="button" name="button" id="btn">RAZ</button>
   </form>
   <script>
-    function eraz(){
-        var naame = document.getElementById("noom").value ;
-        document.getElementById("noom").reset() ; 
-    }
+    var firstName = document.getElementById("prenom");
+    var lastName = document.getElementById("nom");
+    var city = document.getElementById("ville");
+    var butn = document.getElementById("btn");
+
+    butn.addEventListener("click", function erase(){
+      firstName.value = "";
+      lastName.value = "";
+      city.value = "";
+    })
+    
   </script>
 </body>
 </html>
