@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <img id="myimg" src="images/image1.jpg" id="image1" onmouseover="chang(this.id)" onmouseleave="rez(this.id)"/>
+    <img id="myimg2" src="images/image2.jpg" id="image2" onmouseover="chang(this.id)" onmouseleave="rez(this.id)" />
+    <img id="myimg3" src="images/image3.jpg" id="image3" onmouseover="chang(this.id)" onmouseleave="rez(this.id)"/>
+    <img id="myimg4" src="images/image4.jpg" id="image4" onmouseover="chang(this.id)" onmouseleave="rez(this.id)"/>
+    <img id="myimg5" src="images/image5.jpg" id="image5" onmouseover="chang(this.id)" onmouseleave="rez(this.id)"/>
+    <script>
+      function chang(id) {
+      switch(id) {
+        case "myimg" :
+        document.getElementById("myimg").src="images/image1_2.jpg"
+          break;
+        case "myimg2" :
+        document.getElementById("myimg2").src="images/image2_2.jpg"
+        break;
+        case "myimg3" :
+        document.getElementById("myimg3").src="images/image3_2.jpg"
+          break;
+        case "myimg4" :
+        document.getElementById("myimg4").src="images/image4_2.jpg"
+          break;
+        case "myimg5" :
+        document.getElementById("myimg5").src="images/image5_2.jpg"
+      }
+    }
+      function rez(id){
+        switch(id) {
+          case "myimg" : 
+          document.getElementById("myimg").src="images/image1.jpg"
+          break ;
+          case "myimg2" : 
+          document.getElementById("myimg2").src="images/image2.jpg"
+          break ;
+          case "myimg3" : 
+          document.getElementById("myimg3").src="images/image3.jpg"
+          break ;
+          case "myimg4" : 
+          document.getElementById("myimg4").src="images/image4.jpg"
+          break ;
+          case "myimg5" : 
+          document.getElementById("myimg5").src="images/image5.jpg"
+          break ;
+        }
+      }
+    </script>
+  </body>
+
+</html>
