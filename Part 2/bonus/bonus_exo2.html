@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+<!--Exercice 2 Dans le fichier HTML fourni, 
+    afficher une boite de dialogue avec le message : "Merci de votre participation" 
+    quand le champ de saisie perd le focus.-->
+
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="saisnom" onblur = "message()"/>
+  </form>
+</body>
+    <script>
+        var saisie = document.getElementById("saisnom") ;
+
+        saisie.addEventListener("mouseleave", function message(){
+                alert("Merci de votre participation " + saisie.value + " à bientot ! :) ") ;
+    })
+    </script>
+</html>
