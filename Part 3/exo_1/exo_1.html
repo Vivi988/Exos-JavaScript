@@ -8,8 +8,25 @@
     et la retirer quand la souris ne la survole plus.-->
 
   </head>
+<<<<<<< Updated upstream
 <body>
   <img src="images/image1.jpg" id="image1" onmouseover="addBorder()"/> 
+=======
+  <body>
+    <div class="frame" id="cadre">
+      <img src="images/image1.jpg" id="image1"/>
+    </div>
+    <style>
+      #image1 {
+          border : 3px solid rgb(243, 8, 8);
+          object-fit: fill;
+          width: auto ;
+          height: auto ;
+          padding: 1px 1px ;
+      } 
+  </style>
+  </body>
+>>>>>>> Stashed changes
     <script>
             function addBorder(){
                 document.getElementById("image1").style.border = "3px red solid" ;
