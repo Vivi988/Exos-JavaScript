@@ -1,0 +1,56 @@
+<script>
+​
+  function comparer(move1, move2) {
+    if (move1 == move2) {
+      return console.log("Manche nulle");
+    } else if (
+      (move1 == "pierre" && move2 == "ciseaux") ||
+      (move1 == "ciseaux" && move2 == "feuille") ||
+      (move1 == "feuille" && move2 == "pierre")
+    ) {
+      scoreJoueur++ ;
+      return console.log(move1 + " : " + "Joueur gagne la manche !!") ;
+    } else {
+      scoreOrdi++ ;
+      return console.log(move2 + " : " + "Ordinateur gagne la manche !!") ;
+    }
+  }
+​
+  var move = ["pierre", "feuille", "ciseaux"] ;
+​
+  var scoreOrdi = 0;
+  var scoreJoueur = 0;
+​
+  for (var i = 0; i < 3; i++) {
+    var choixOrdi = move[Math.floor(Math.random() * move.length)];
+    var choixJoueur = prompt("pierre, feuille ou ciseaux ?");
+    console.log("Player : " + choixJoueur) ;
+    console.log("Computer : " + choixOrdi) ;
+​
+    comparer(choixJoueur, choixOrdi);
+  }
+​
+  if (scoreJoueur > scoreOrdi) {
+    console.log("Player win !!") ;
+  } else if (scoreOrdi > scoreJoueur) {
+    console.log("Computer win !!") ;
+  } else {
+    console.log("Egalité !!") ;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
